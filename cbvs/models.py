@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 
-
+"""School Models"""
 class School(models.Model):
     name = models.CharField(max_length=256)
     principal = models.CharField(max_length=256)
@@ -12,7 +12,7 @@ class School(models.Model):
         return self.name
 
 
-
+"""Student Models"""
 class Student(models.Model):
     name = models.CharField(max_length=256)
     age = models.PositiveIntegerField()
