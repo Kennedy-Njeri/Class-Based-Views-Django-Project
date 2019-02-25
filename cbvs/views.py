@@ -30,13 +30,14 @@ class SchoolDetailView(DetailView):
     model = models.School
     template_name = 'school_detail.html'
 
-
+"""Create View"""
 class SchoolCreateView(CreateView):
 
     fields = ['name', 'principal', 'location']
     model = models.School
     template_name = 'school_form.html'
 
+"""Update View"""
 class SchoolUpdateView(UpdateView):
     fields = ('name', 'principal')
     model = models.School
