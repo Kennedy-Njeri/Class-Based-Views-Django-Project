@@ -36,3 +36,8 @@ class SchoolCreateView(CreateView):
     fields = ['name', 'principal', 'location']
     model = models.School
     template_name = 'school_form.html'
+
+class SchoolUpdateView(UpdateView):
+    fields = ('name', 'principal')
+    model = models.School
+    template_name = 'school_update.html'
