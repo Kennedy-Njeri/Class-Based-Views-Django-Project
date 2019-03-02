@@ -44,6 +44,8 @@ class SchoolUpdateView(UpdateView):
     model = models.School
     template_name = 'school_update.html'
 
+
+"""delete view"""
 class SchoolDeleteView(DeleteView):
     model = models.School
     success_url = reverse_lazy('list')
